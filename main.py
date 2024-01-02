@@ -16,7 +16,7 @@ from routes.homes import router as event_router
 app.include_router(event_router, prefix='/homes')                             
 from routes.gadgets import router as gadget_router
 app.include_router(gadget_router, prefix='/gadgets')                              
-from routes.positionings import router as posi_router
+from routes.positionings import router_po as posi_router
 app.include_router(posi_router, prefix='/positionings')                             
 
 from fastapi import Request 
