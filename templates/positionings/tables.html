@@ -12,7 +12,61 @@
 </head>
 
 <body>
-    <nav>nav</nav>
+    <nav class="container">
+        <ul class="nav justify-content-between">
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="/homes/standard">standard</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Gadgets</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="/gadgets/containers">Containers</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="/gadgets/colors">Colors</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="/gadgets/cards">Cards</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="/gadgets/buttons">Buttons</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Positioning</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="/positionings/standard">Standard</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="/positionings/grids">Grids</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="/positionings/tables">Tables</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="/positionings/forms">Forms</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">main</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="/">main</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="/index">index</a>
+                    </li>
+        </ul>
+    </nav>
     <main class="container">
         <h2>Basic Table</h2>
         <table class="table table-hover table-bordered table-striped">
