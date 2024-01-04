@@ -15,6 +15,7 @@
         .container {
             margin: 5px 5%;
         }
+
         a:visited {
             color: black;
         }
@@ -40,7 +41,7 @@
         }
     </style>
 </head>
- 
+
 <body>
     <!-- top menu -->
     <nav class="container">
@@ -97,9 +98,28 @@
                         <a class="dropdown-item" href="/index">index</a>
                     </li>
                     <li class="nav_item">
-                        <a class="nanv-link" href="/users/form">inserts</a>
+                        <a class="dropdown-item" href="homes/params_query">params_query</a>
                     </li>
-                </ul>
+            </li>
+        </ul>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="/users/inserts">회원가입 폼</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">users</a>
+            <ul class="dropdown-menu">
+                <li class="nav_item">
+                    <a class="dropdown-item" href="/users/form">inserts</a>
+                </li>
+                <li class="nav_item">
+                    <a class="dropdown-item" href="/users/lists">lists</a>
+                </li>
+                <li class="nav_item">
+                    <a class="dropdown-item" href="/users/reads">reads</a>
+                </li>
+
+            </ul>
     </nav>
     <!-- main -->
     <main class="container">

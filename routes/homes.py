@@ -11,3 +11,10 @@ templates = Jinja2Templates(directory="templates/")
 async def home(request:Request):
     pass
     return templates.TemplateResponse(name="homes/standard.html",context = {"request": request})
+
+
+# /homes/params_query -> /homes/parameters_query.html 호출
+@router.get("/params_query")
+async def home(request:Request):
+    pass
+    return templates.TemplateResponse(name="homes/parameters_query.html",context = {"request": request})

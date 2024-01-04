@@ -33,6 +33,12 @@ async def root(request:Request):
     # html 틀로 호출
     return templates.TemplateResponse("main.html"
                                       ,{'request': request})
+@app.post("/")                                                                 
+async def root(request:Request):                                              
+    # return {"message": "juhyeon World!"}                                      
+    # html 틀로 호출
+    return templates.TemplateResponse("main.html"
+                                      ,{'request': request})
 @app.get("/index")                                                               
 async def root(request:Request):                                             
     # return {"message": "juhyeon World!"}                                      
