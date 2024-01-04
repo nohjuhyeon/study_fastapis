@@ -49,8 +49,3 @@ async def home(request:Request, object_id):
     pass
     return templates.TemplateResponse(name="users/reads.html",context = {"request": request})
 
-@router.get("/reads/{object_id}")
-async def home(request:Request, object_id):
-    print(object_id)
-    pass
-    return templates.TemplateResponse(name="users/reads.html",context = {"request": request})
